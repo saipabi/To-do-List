@@ -1,4 +1,4 @@
-import React from 'react';
+
 import PropTypes from "prop-types"
 
 const TodoItem = ({ todo, editTodo, deleteTodo, changeStatus }) => {
@@ -23,7 +23,7 @@ const TodoItem = ({ todo, editTodo, deleteTodo, changeStatus }) => {
     </div>
   );
 };
-TodoItem.proptypes = {
+TodoItem.propTypes = {
     todo : PropTypes.object,
     editTodo : PropTypes.object,
     deleteTodo : PropTypes.object,
