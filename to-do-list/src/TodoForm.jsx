@@ -1,5 +1,7 @@
-import  { useState } from 'react';
-import PropTypes from "prop-types"
+// import React, { useState } from 'react';
+import { useState } from 'react';
+import PropTypes from 'prop-types';
+
 
 const TodoForm = ({ addTodo }) => {
   const [taskName, setTaskName] = useState('');
@@ -40,10 +42,8 @@ const TodoForm = ({ addTodo }) => {
   );
 };
 
-
-
-TodoForm.propTypes ={
-    addTodo:PropTypes.object,
+TodoForm.propTypes = {
+  addTodo : PropTypes.string
 }
 
 export default TodoForm;

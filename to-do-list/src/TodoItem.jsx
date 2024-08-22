@@ -1,5 +1,5 @@
-
-import PropTypes from "prop-types"
+// import React from 'react';
+import PropTypes from 'prop-types';
 
 const TodoItem = ({ todo, editTodo, deleteTodo, changeStatus }) => {
   const { id, taskName, description, status } = todo;
@@ -24,13 +24,10 @@ const TodoItem = ({ todo, editTodo, deleteTodo, changeStatus }) => {
   );
 };
 TodoItem.propTypes = {
-    todo : PropTypes.object,
-    editTodo : PropTypes.object,
-    deleteTodo : PropTypes.object,
-    changeStatus : PropTypes.object,
-    id: PropTypes.object,
-    taskName: PropTypes.object,
-    description: PropTypes.object,
-    status: PropTypes.object
+  todo : PropTypes.string,
+  editTodo: PropTypes.string,
+  deleteTodo: PropTypes.string,
+  changeStatus: PropTypes.string,
 }
+
 export default TodoItem;

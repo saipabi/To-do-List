@@ -1,5 +1,5 @@
-
-import PropTypes from "prop-types"
+// import React from 'react';
+import PropTypes from 'prop-types';
 
 const Filter = ({ setFilter }) => {
   return (
@@ -10,9 +10,8 @@ const Filter = ({ setFilter }) => {
     </div>
   );
 };
-
 Filter.propTypes = {
-    setFilter : PropTypes.object,
+  setFilter : PropTypes.string,
 }
 
 export default Filter;
